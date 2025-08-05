@@ -19,13 +19,15 @@ expect_used = "deny"
 panic = "deny"
 
 [dependencies]
-bevy = { version = "0.16", default-features = false, features = [
-    "bevy_asset",
-    "bevy_sprite",
-] }
-bevy_internal = { version = "0.16", features = ["bevy_image"] }
+bevy_platform = { version = "0.16"}
+bevy_math = { version = "0.16"}
+bevy_reflect = { version = "0.16"}
+bevy_app = { version = "0.16"}
+bevy_asset = { version = "0.16"}
+bevy_sprite = { version = "0.16"}
+bevy_image = { version = "0.16"}
+
 thiserror = "1.0"
 
 [dev-dependencies]
 pretty_assertions = "1"
-bevy = "0.16"
